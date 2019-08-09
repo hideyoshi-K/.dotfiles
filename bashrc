@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 alias vi='vim'
+
+source /opt/ros/melodic/setup.bash
