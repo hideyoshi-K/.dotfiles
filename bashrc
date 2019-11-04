@@ -123,3 +123,5 @@ source /opt/ros/melodic/setup.bash
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=${PYENV_ROOT}/bin:$PATH
 eval "$(pyenv init -)"
+
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opencv/lib/pkgconfig
