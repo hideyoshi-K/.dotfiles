@@ -116,12 +116,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias vi='vim'
+# Pyenv
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
+# ROS
 source /opt/ros/melodic/setup.bash
 
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=${PYENV_ROOT}/bin:$PATH
-eval "$(pyenv init -)"
+# OpenCV
+export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH
 
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opencv/lib/pkgconfig
+# GL
+export LIBGL_ALWAYS_INDIRECT=0
+export DISPLAY=:0.0
