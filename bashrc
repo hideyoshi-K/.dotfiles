@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# color
+export TERM=xterm-256color
+
 # tmux
 SESSION_NAME=ope
 if [[ -z "$TMUX" && -z "$STY" ]] && type tmux >/dev/null 2>&1; then
