@@ -137,7 +137,8 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # ROS
-source /opt/ros/melodic/setup.bash
+#source /opt/ros/melodic/setup.bash
+source /opt/ros/eloquent/setup.bash
 
 # OpenCV
 export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH
