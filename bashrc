@@ -132,9 +132,9 @@ if [[ -z "$TMUX" && -z "$STY" ]] && type tmux >/dev/null 2>&1; then
 fi
 
 # Pyenv
-export PATH="~/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#export PATH="~/.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 # ROS
 #source /opt/ros/melodic/setup.bash
