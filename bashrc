@@ -138,7 +138,7 @@ fi
 
 # ROS
 #source /opt/ros/melodic/setup.bash
-source /opt/ros/eloquent/setup.bash
+#source /opt/ros/eloquent/setup.bash
 
 # OpenCV
 export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH
@@ -146,3 +146,7 @@ export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH
 # GL
 export LIBGL_ALWAYS_INDIRECT=0
 export DISPLAY=:0.0
+
+# emacs alias
+alias e='~/.dotfiles/emacs_alias.sh w'
+alias en='~/.dotfiles/emacs_alias.sh nw'
