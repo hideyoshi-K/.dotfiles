@@ -141,7 +141,7 @@ fi
 #source /opt/ros/eloquent/setup.bash
 
 # OpenCV
-export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH
+#export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH
 
 # GL
 export LIBGL_ALWAYS_INDIRECT=0
